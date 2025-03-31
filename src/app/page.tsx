@@ -7,6 +7,7 @@ import { QueueList } from "@/components/queue-list"
 import { SearchSongs } from "@/components/search-songs"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { RioHeader } from "@/components/rio-header"
+import Image from "next/image"
 
 export default function Home() {
   const mainRef = useRef<HTMLElement>(null)
@@ -41,7 +42,9 @@ export default function Home() {
   return (
     <main ref={mainRef} className="min-h-screen rio-gradient">
       <div className="container max-w-md mx-auto px-4 py-6">
-        <div ref={headerRef}>
+        <Image src="/riocabackground.jpg" alt="Hotel Rio Logo" fill className="object-contain" priority />
+
+        <div ref={headerRef} className="glass-container py-6">
           <RioHeader />
         </div>
 
