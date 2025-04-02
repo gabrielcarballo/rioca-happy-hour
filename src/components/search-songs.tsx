@@ -258,7 +258,9 @@ export function SearchSongs() {
             {searchResults.map((song, index) => (
               <div
                 key={song.id}
-                ref={(el) => (itemsRef.current[index] = el)}
+                ref={(el) => {
+                  itemsRef.current[index] = el;
+                }}
                 className="flex items-center gap-3 p-2 rounded-lg transition-colors"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
