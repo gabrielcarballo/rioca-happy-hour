@@ -12,7 +12,7 @@ const mockCurrentTrack = {
   name: "Garota de Ipanema",
   artist: "Tom Jobim & Vinícius de Moraes",
   album: "The Best of Bossa Nova",
-  albumArt: "/placeholder.svg?height=300&width=300",
+  albumArt: "/garotadeipanemamock.jpg?height=300&width=300",
   duration: 180, // segundos
   progress: 45, // segundos
   isPlaying: true,
